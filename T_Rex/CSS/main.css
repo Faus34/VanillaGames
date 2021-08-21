@@ -1,14 +1,44 @@
 .dino {
   position: absolute;
-  bottom: 0px;
   width: 60px;
   height: 60px;
-  background-color:red;
+  background-image: url("C:/Users/Administrador/OneDrive - Instituto Politecnico Nacional/Documents/GitHub/VanillaGames/T_Rex/t-rex.png");
+  bottom: 0px;
 }
-.obstacle{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: orange;
-    bottom: 0px;
+
+.obstacle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("C:/Users/Administrador/OneDrive - Instituto Politecnico Nacional/Documents/GitHub/VanillaGames/T_Rex/cacti.png");
+  bottom: 0px;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
+/* Keyframes changes one style property in an animation gradually */
+@-webkit-keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
+
+#desert {
+  position: absolute;
+  bottom: 0px;
+  background-image: url("C:/Users/Administrador/OneDrive - Instituto Politecnico Nacional/Documents/GitHub/VanillaGames/T_Rex/t-rex-background.png");
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  -webkit-animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 200px;
 }

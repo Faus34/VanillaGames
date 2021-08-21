@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
     const dino =  document.querySelector('.dino');
     const grid = document.querySelector('.grid');
-    const alert = document.getElementById('alert')
+    const alert = document.getElementById('alert');
+    const body = document.querySelector('.body');
     let isJumping = false;
     let gravity = 0.9;
     let isGameOver = false;
@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.addEventListener('keyup',control);
-
     let position = 0;
+
     function jump(){
         let count = 0;
         let timerId = setInterval(function () {
@@ -69,10 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             obstacle.style.left = obstaclePosition + 'px';
         },20);
 
-        if(!isGameOver){
-            setTimeout(generateObstacle, randomTime);//calls the function (first arg) when time (second arg) has passed if the game is not over} 
-        }
+        if(!isGameOver) setTimeout(generateObstacle, randomTime);//calls the function (first arg) when time (second arg) has passed if the game is not over} 
     }
-
     generateObstacle();
 })
