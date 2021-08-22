@@ -2,7 +2,7 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  background-image: url("C:/Users/Administrador/OneDrive - Instituto Politecnico Nacional/Documents/GitHub/VanillaGames/T_Rex/t-rex.png");
+  background-image: url("https://raw.githubusercontent.com/Faus34/VanillaGames/main/T_Rex/t-rex.png");
   bottom: 0px;
 }
 
@@ -10,7 +10,7 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  background-image: url("C:/Users/Administrador/OneDrive - Instituto Politecnico Nacional/Documents/GitHub/VanillaGames/T_Rex/cacti.png");
+  background-image: url("https://raw.githubusercontent.com/Faus34/VanillaGames/main/T_Rex/cacti.png");
   bottom: 0px;
 }
 
@@ -35,7 +35,7 @@
 #desert {
   position: absolute;
   bottom: 0px;
-  background-image: url("C:/Users/Administrador/OneDrive - Instituto Politecnico Nacional/Documents/GitHub/VanillaGames/T_Rex/t-rex-background.png");
+  background-image: url("https://raw.githubusercontent.com/Faus34/VanillaGames/main/T_Rex/t-rex-background.png");
   background-repeat: repeat-x;
   animation: slideright 600s infinite linear;
   -webkit-animation: slideright 600s infinite linear;
