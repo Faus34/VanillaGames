@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const alert = document.getElementById('alert');
     const body = document.querySelector('.body');
     let isJumping = false;
-    let gravity = 0.9;
+    let gravity = 0.91;
     let isGameOver = false;
 
     function control(e) {
