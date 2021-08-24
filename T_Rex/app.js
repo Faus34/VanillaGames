@@ -48,12 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateObstacle(){
-        let randomTime = Math.random() * 4000; //generates random time (1-4000ms) for next obstacle
-        let obstaclePosition = 1000; //start dist from dino
+        let max = 5000; //ms
+        let min = 1000; //ms
+        let randomTime = Math.random() * (max - min) + min; //generates random time (min-max) for next obstacle
+        let obstaclePosition = 2000; //start dist from dino in rems 
         const obstacle = document.createElement('div'); //It creates a div and add a class 'obstacle' to it.
         if(!isGameOver) obstacle.classList.add('obstacle');
         grid.appendChild(obstacle); //passing the obstacle to the div.grid in the html
-        obstacle.style.left = obstaclePosition + 'px'; //moving the obstacle to the right
+        obstacle.style.left = obstaclePosition + 'rem'; //moving the obstacle to the right
 
         let timerId = setInterval(function () {
             if(obstaclePosition > 0 && obstaclePosition < 60 && position < 60){
